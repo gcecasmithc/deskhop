@@ -32,7 +32,8 @@
  * 
  * */
 
-#define HOTKEY_TOGGLE HID_KEY_CAPS_LOCK
+#define HOTKEY_TOGGLE HID_KEY_F24
+
 
 /**================================================== *
  * ==============  Mouse Speed Factor  ============== *
@@ -156,8 +157,8 @@
  *
  * */
 
-#define OUTPUT_A_OS LINUX
-#define OUTPUT_B_OS LINUX
+#define OUTPUT_A_OS WINDOWS
+#define OUTPUT_B_OS WINDOWS
 
 /**================================================== *
  * =================  Enforce Ports ================= *
