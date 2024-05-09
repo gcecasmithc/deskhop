@@ -1,16 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
 
-set(PICO_SDK_FETCH_FROM_GIT off)
+set(PICO_SDK_FETCH_FROM_GIT ON)
 set(PICO_BOARD=pico)
-set(PICO_SDK_PATH ${CMAKE_CURRENT_LIST_DIR}/pico-sdk)
-
-set(CMAKE_BUILD_TYPE "Debug") # DEBUG
-set(LOG 2) # DEBUG
 
 include(pico_sdk_import.cmake)
 set(CMAKE_C_FLAGS "-Ofast -Wall -mcpu=cortex-m0plus -mtune=cortex-m0plus -funroll-loops")
-
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DDH_DEBUG=1") # DEBUG
 
 set(PICO_COPY_TO_RAM 1)
 
