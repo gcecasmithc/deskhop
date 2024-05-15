@@ -103,6 +103,10 @@ void initial_setup(device_t *state) {
 
     /* Setup the watchdog so we reboot and recover from a crash */
     watchdog_enable(WATCHDOG_TIMEOUT, WATCHDOG_PAUSE_ON_DEBUG);
+
+    /* Center mouse cursor*/
+    state->mouse_x = 16384;
+    state->mouse_y = 16384;
 }
 
 /* ==========  End of Initial Board Setup  ========== */
