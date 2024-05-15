@@ -1,9 +1,2 @@
 .vscode
 build/
-README.md
-case/
-img/
-pcb/
-schematics/
-src/defaults.c
-src/user_config.h
